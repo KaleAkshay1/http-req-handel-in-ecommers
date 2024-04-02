@@ -1,0 +1,31 @@
+<%- include('navbar') -%>
+<main>
+  <section class="section-1">
+    <% for (let i of product) { %>
+    <div class="card oh f-c" style="width: 18rem; height: 500px">
+      <img
+        src="<%= i.image %>"
+        class="card-img-top"
+        style="width: 100%; height: 60%"
+      />
+      <div class="card-body px-0 f-c">
+        <h5 class="card-title"><%= i.title %></h5>
+        <div class="card-text"></div>
+        <div class="flex">
+          <pre>Rating : <%= i.rating.rate %> | </pre>
+          <pre>Count : <%= i.rating.count %></pre>
+        </div>
+        <div>
+          <a
+            href="/restore/<%= i._id %>"
+            class="btn btn-secondary"
+            style="width: 170px"
+            >Restore</a
+          >
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </section>
+</main>
+<%- include('footer') -%>

@@ -1,0 +1,17 @@
+{
+  "name": "static-file",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4"
+  }
+}
